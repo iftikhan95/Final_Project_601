@@ -226,7 +226,6 @@ label {
   height: 95vh;
   width: 95vw;
   text-align: center;
-  background: rgba(127, 128, 137, 0.5);
   border-radius: 10px;
 
   flex-wrap: wrap;
