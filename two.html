@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="one.html">Home</a>
+        <a href="two.html" class="active">Info</a>
+        <a href="three.html">Resume</a>
+        <a href="four.html">Course</a>
+        <a href="five.html">Contact</a>
+        <a href="six.html">Photos</a>
+        <a href="javascript:void(0);" class="icon" onclick="navExpand()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class = "name">
+        <h1>Information</h1>
+    </div>
+
+    <div class = "tab" style = "overflow-x:auto;">
+        <table >
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Nationality</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Social Media</th>
+                <th>School</th>
+            </tr>
+            <tr>
+              <td>Iftikhar Khan</td>
+              <td>Wilmington, DE</td>
+              <td>American</td>
+              <td> <a href="https://www.boeing.com/">The Boeing Company</a></td>
+              <td>iftikhan9595@gmail.com</td>
+              <td>(914) 670 1214</td>
+              <td><a href="https://www.linkedin.com/in/iftikharakhan/">LinkedIn</a></td>
+              <td> Stony Brook University (Undergraduate), Boston University (Graduate)</td>
+            </tr>
+          </table> 
+        </div>
+    
+        <div id = "app" class = "container">
+            <img class = "item" :src="boeing" alt="Boeing Logo" />
+            <img class = "item" :src="boston" alt="Boston Logo" />
+            <img class = "item" :src="sbu" alt="SBU Logo" />
+        </div>
+
+    <div class = "footer_">
+        <footer>
+            <p>Website designed by Iftikhar Khan<br>
+            <a href="ifkhan@bu.edu">ifkhan@bu.edu</a>
+            </p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src = "script.js" ></script>
+    <script src = "two.js" ></script>
+</body>
+</html>

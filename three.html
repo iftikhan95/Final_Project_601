@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="one.html">Home</a>
+        <a href="two.html">Info</a>
+        <a href="three.html" class = "active">Resume</a>
+        <a href="four.html">Course</a>
+        <a href="five.html">Contact</a>
+        <a href="six.html">Photos</a>
+        <a href="javascript:void(0);" class="icon" onclick="navExpand()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class ="name">
+        <h2> Resume: Iftikhar Khan</h2>
+    </div>
+   
+    <div class = "resume" id = "page">
+        <p>The resume is stored in a JSON file. Please click the button below to fetch my resume!</p>
+        <button onclick = "displayResume()">Click here to reveal my resume! </button>   
+        <p id = "displayResult"></p>
+    </div>
+
+    <div class = "resume">
+        <p>Click below to download a PDF Version of my resume.</p>
+        <form method = "get" action = "Iftikhar_Khan_Resume.pdf" target="_blank">
+            <button class = "resume" type = "submit" >Download Resume! </button>   
+        </form>
+    </div>
+
+    <div class = "footer_">
+        <footer>
+            <p>Website designed by Iftikhar Khan<br>
+            <a href="ifkhan@bu.edu">ifkhan@bu.edu</a>
+            </p>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src = "script.js" ></script>
+    <script src = "three.js" ></script>
+</body>
+</html>

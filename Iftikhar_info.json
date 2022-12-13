@@ -1,0 +1,30 @@
+{
+    "Degrees": [
+        {    
+            "degree": {
+                "School"    : "School: Stony Brook University (B.E.), Boston University (M.S.)",
+                "Program"   : "Hardware Software Co-Design of Embedded Systems, Computer Vision Techniques, Software Development in C++ and C",
+                "Type"      : "Java, HTML, CSS, Javascript, Vue.js",
+                "Year"      : "Agile Software Development, Data Structures, Algorithms, Database"
+            }
+        },
+        {
+            "degree": {
+                "School"    : "The Boeing Company - Software Engineer (2019 - Current)",
+                "Program"   : "Design and test embedded software for the V22 Osprey Tiltrotor Aircraft",
+                "Type"      : "Perform hardware-software integration of the software builds through lab simulation and emulation",
+                "Year"      : "Learned to use various design, development, code coverage, version control and code review tools such as: Visual Studio, Gnat Studio, Green Hills RTOS, VectorCAST Code Coverage, Beyond Compare"
+            }
+        },
+        {
+            "degree": {
+                "School"    : "Collins Aerospace - Software Engineer Intern (2016 - 2018)",
+                "Program"   : "Worked with a cross-functional design team to develop new and maintain existing embedded applications for controlling LED lighting systems and fixtures.",
+                "Type"      : "Developed test applications (Python) for supporting all phases of development and verification of deliverable applications.",
+                "Year"      : "Tested software designs and code at the unit and system level to ensure that all requirements are met, and the highest software quality is achieved."
+            }
+        }
+
+    ]
+    
+}

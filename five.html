@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="one.html">Home</a>
+        <a href="two.html">Info</a>
+        <a href="three.html">Resume</a>
+        <a href="four.html">Course</a>
+        <a href="five.html" class = "active">Contact</a>
+        <a href="six.html">Photos</a>
+        <a href="javascript:void(0);" class="icon" onclick="navExpand()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class ="name">
+        <h1> Contact Form</h1>
+    </div>
+
+    <div class = "paraIndex">
+        <p>Please enter your First Name, Last Name and Email Address along with any comments to contact me.</p>
+    </div>
+
+    <form>
+    <div class = "content-box">
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input class = "input" type="text" id="firstName" name = "firstName"
+                       placeholder="First Name" required minlength="2" maxlength="100">
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input class = "input" type="text" id="lastName" name="lastName" 
+                       placeholder="Last Name" required minlength="2" maxlength="100">
+            </div>
+            
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <input class = "com" type="text" id="comments" name="lastName" 
+                       placeholder="comments" required minlength="2" maxlength="5000">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Email</label>
+                <input class = "input" type="email" id = "email" placeholder="Enter you email" required>
+            </div>
+
+            <div class = "resume">
+            <button type = "submit" onclick = "submitFn()">Submit </button>   
+            </div>
+
+            <div class = "paraIndex">
+                <p id = "errorMessage"></p>        
+            </div>
+          
+    </div>
+    </form>
+
+    <div class = "footer_">
+        <footer>
+            <p>Website designed by Iftikhar Khan<br>
+            <a href="ifkhan@bu.edu">ifkhan@bu.edu</a>
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src = "five.js" ></script>
+    <script src = "script.js" ></script>
+</body>
+</html>

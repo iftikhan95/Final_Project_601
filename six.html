@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="one.html">Home</a>
+        <a href="two.html">Info</a>
+        <a href="three.html">Resume</a>
+        <a href="four.html">Course</a>
+        <a href="five.html">Contact</a>
+        <a href="six.html" class = "active" >Photos</a>
+        <a href="javascript:void(0);" class="icon" onclick="navExpand()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class ="name">
+        <h1>Photo Album Trivia</h1>
+    </div>
+
+    <div class = "paraIndex">
+        <p>I am a very passionate soccer fan. The stadiums below belong to some famous soccer clubs around the world.If you are also a soccer fan like me, go ahead and take a guess about their name and location. Hover your mouse over the images to reveal.</p>
+    </div>
+
+    <div id="app" class = "content-box-six">
+        <img  v-if="!x" class = "pictures" @mouseover="x = true" :src="Old_Trafford_1" alt="Old Trafford" />
+
+        <img @mouseleave="x = false" v-if="x" class = "pictures" :src="Old_Trafford_2" alt="Old Trafford" />
+     
+        <img @mouseover="y = true" v-if="!y" class = "pictures" :src="barnabeu_1" alt="Barnabeu" />
+    
+        <img @mouseleave="y = false" v-if="y" class = "pictures" :src="barnabeu_2" alt="Barnabeu" />
+
+        <img v-if="!m" class = "pictures" @mouseover="m = true" :src="camp_nou" alt="camp_nou" />
+
+        <img @mouseleave="m = false" v-if="m" class = "pictures" :src="camp_nou_2" alt="camp_nou" />
+
+        <img v-if="!n" class = "pictures" @mouseover="n = true" :src="ac_milan" alt="ac_milan" />
+
+        <img @mouseleave="n = false" v-if="n" class = "pictures" :src="ac_milan_2" alt="ac_milan" />
+     
+
+    </div>
+
+    <div class = "footer_">
+        <footer>
+            <p>Website designed by Iftikhar Khan<br>
+            <a href="ifkhan@bu.edu">ifkhan@bu.edu</a>
+            </p>
+        </footer>
+    </div>
+    
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src = "six.js" ></script>
+    <script src = "script.js" ></script>
+</body>
+</html>

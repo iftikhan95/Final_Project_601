@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="one.html">Home</a>
+        <a href="two.html">Info</a>
+        <a href="three.html">Resume</a>
+        <a href="four.html" class = "active">Course</a>
+        <a href="five.html">Contact</a>
+        <a href="six.html">Photos</a>
+        <a href="javascript:void(0);" class="icon" onclick="navExpand()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class ="name">
+        <h1> 5 Cool Things I have Learnt in this Course.</h1>
+    </div>
+
+    <div class = "paraIndex">
+        <p>Press the button below to reveal my top learning items one by one. </p>
+    </div>
+
+
+    <div id = "app">
+
+        <p class = "paraIndex" v-if="item_1"> Learned to create basic websites with HTML only.</p>
+        <p class = "paraIndex" v-if="item_2"> Learned to style websites with CSS using Box Model.</p>
+        <p class = "paraIndex" v-if="item_3"> Learned to use Javascript and introduced computation, form verification/submission and DOM Manipulation techniques to websites using Javascript.</p>
+        <p class = "paraIndex" v-if="item_4"> Learned how to interface with JSON database files; read and displayed data from the database files to websites. </p>
+        <p class = "paraIndex" v-if="item_5"> Learned the basics of the Vue.js Framework. Created this page using DOM Manipulation Features of Vue.js!.</p>
+
+        <div class = "resume" id = "page">
+            <button class = "resume" v-on:click="processFour">Click Me</button>
+        </div>
+    
+        <p class = "paraIndex">{{content}}</p>
+        
+    </div>
+
+
+
+    <div class = "footer_">
+        <footer>
+            <p>Website designed by Iftikhar Khan<br>
+            <a href="ifkhan@bu.edu">ifkhan@bu.edu</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src = "four.js" ></script>
+    <script src = "script.js" ></script>
+</body>
+</html>
